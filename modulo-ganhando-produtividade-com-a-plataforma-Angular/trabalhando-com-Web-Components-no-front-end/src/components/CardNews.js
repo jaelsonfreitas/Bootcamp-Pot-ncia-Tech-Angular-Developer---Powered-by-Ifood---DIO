@@ -15,11 +15,12 @@ class Cardnews extends HTMLElement{
         cardLeft.setAttribute("class", "card__left");
 
         const autor =  document.createElement("span");
-        autor.textContent = "By " + (this.getAttribute("autor")|| " Anonymous ");
+        autor.textContent = " Por: " + (this.getAttribute("autor")|| " Anonymous ");
 
         const linkTitle = document.createElement("a");
         linkTitle.textContent = this.getAttribute('title')
         linkTitle.href = this.getAttribute("link-url");
+        linkTitle.target = "_blank";
 
         const newsContent = document.createElement("p");
         newsContent.textContent = this.getAttribute("content")
@@ -51,9 +52,9 @@ class Cardnews extends HTMLElement{
         .card{
             background-color: white;
              width: 99%;
-             box-shadow: 11px 21px 5px -5px rgba(0,0,0,0.65);
-             -webkit-box-shadow: 11px 21px 5px -5px rgba(0,0,0,0.65);
-             -moz-box-shadow: 11px 21px 5px -5px rgba(0,0,0,0.65);
+             box-shadow: 6px 0px 5px 10px rgba(28,78,176,0.75);
+             -webkit-box-shadow: 6px 0px 5px 10px rgba(28,78,176,0.75);
+             -moz-box-shadow: 6px 0px 5px 10px rgba(28,78,176,0.75);
              display: flex;
              flex-direction: row;
              justify-content: space-between;
@@ -86,6 +87,9 @@ class Cardnews extends HTMLElement{
              padding-left: 20px;
              margin-left: 20px;
              margin-top: 20px;
+             width: 300px;
+             height: 169px;
+             border-radius: 2px;
         }
         `;
 
