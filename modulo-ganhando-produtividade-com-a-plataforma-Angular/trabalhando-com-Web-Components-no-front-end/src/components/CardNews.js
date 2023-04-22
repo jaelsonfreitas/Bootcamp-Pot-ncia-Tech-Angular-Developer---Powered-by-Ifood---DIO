@@ -14,8 +14,19 @@ class Cardnews extends HTMLElement{
         const cardLeft = document.createElement("div");
         cardLeft.setAttribute("class", "card__left");
 
+        const autor =  document.createElement("span");
+        const linkTitle = document.createElement("a");
+        const newsContent = document.createElement("p");
+
+        cardLeft.appendChild(autor);
+        cardLeft.appendChild(linkTitle);
+        cardLeft.appendChild(newsContent);
+
         const cardRight = document.createElement("div");
         cardRight.setAttribute("class", "card__right");
+        const newImage = document.createElement("img");
+
+        cardRight.appendChild(newImage);
 
         componentRoot.appendChild(cardLeft);
         //serve para pendurar o meu card left no pai.
