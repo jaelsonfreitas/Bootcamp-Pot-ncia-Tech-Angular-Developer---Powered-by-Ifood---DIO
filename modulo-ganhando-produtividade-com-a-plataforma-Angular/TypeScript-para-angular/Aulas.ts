@@ -37,9 +37,16 @@ function addNumber(x: number,y:number): number{
 function addToHello(name: string) {
     return `Hello ${name}`;
 }
-
+function calltoPhone(phone: number | string): any  {
+    return phone;
+}
+/**
+ * podemos declarar do tipo number | string ou any - recomenda-se não utilizar o tipo any.
+ */
 let soma: number = addNumber(4, 7);
 
 console.log(addToHello("Felipe"));
+console.log(calltoPhone());
+
 
 .
