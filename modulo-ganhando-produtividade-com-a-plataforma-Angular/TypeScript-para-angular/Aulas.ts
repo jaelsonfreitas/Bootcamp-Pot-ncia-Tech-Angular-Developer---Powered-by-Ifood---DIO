@@ -40,9 +40,13 @@ function addToHello(name: string) {
 function calltoPhone(phone: number | string): any  {
     return phone;
 }
-/**
+/*
  * podemos declarar do tipo number | string ou any - recomenda-se não utilizar o tipo any.
  */
+
+async function getDatabase(id : number): Promise;<string> {
+    return "Jaelson";
+}
 let soma: number = addNumber(4, 7);
 
 console.log(addToHello("Felipe"));
