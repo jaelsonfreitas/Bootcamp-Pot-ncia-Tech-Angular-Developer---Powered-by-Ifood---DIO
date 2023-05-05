@@ -25,3 +25,19 @@ dados.pop();
 let aniversario: Date = new Date("2023-05-04 21:41");
 console.log(aniversario.toString());
 
+/**
+ * Funçoes - não são diferentes do JS tradicional.
+ * devemos sempre tipar nossas funçoes para ele nao pegar de maneira implicita.
+ */
+
+function addNumber(x: number,y:number): number{
+    return x + y;
+}
+
+function addToHello(name: string) {
+    return `Hello ${name}`;
+}
+
+let soma: number = addNumber(4, 7);
+
+console.log(addToHello("Felipe"));
