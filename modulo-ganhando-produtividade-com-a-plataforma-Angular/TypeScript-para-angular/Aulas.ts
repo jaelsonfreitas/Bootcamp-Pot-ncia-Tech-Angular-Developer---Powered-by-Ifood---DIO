@@ -41,3 +41,5 @@ function addToHello(name: string) {
 let soma: number = addNumber(4, 7);
 
 console.log(addToHello("Felipe"));
+
+.
