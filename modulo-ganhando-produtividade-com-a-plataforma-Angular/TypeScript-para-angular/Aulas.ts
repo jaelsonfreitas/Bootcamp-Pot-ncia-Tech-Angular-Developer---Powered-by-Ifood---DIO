@@ -52,5 +52,34 @@ let soma: number = addNumber(4, 7);
 console.log(addToHello("Felipe"));
 console.log(calltoPhone());
 
+    //interfaces (type x interface)
+    type robot = {
+       readonly id: number | string;
+        name: string;
+    };
+    /**
+     * Mais utilizado para trabalhar com tipos de objetos.
+     */
 
-.
+    interface robot2 {
+        readonly id: number | string;
+        name: string;
+    }
+/**
+ * Mais utilizado quando queremos trabalhar com classe.
+ */
+
+const bot1: robot2 = {
+    id: 1
+    name: "Megamen"
+};
+
+    const bot2: robot2 = {
+        id: 1
+        name: "Megamen"
+    };
+
+    console.log(bot1);
+    console.log(bot2);
+    
+    
