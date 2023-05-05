@@ -64,6 +64,7 @@ console.log(calltoPhone());
     interface robot2 {
         readonly id: number | string;
         name: string;
+        sayHello():string;
     }
 /**
  * Mais utilizado quando queremos trabalhar com classe.
@@ -82,4 +83,15 @@ const bot1: robot2 = {
     console.log(bot1);
     console.log(bot2);
     
-    
+    class Pessoa implements robot2{
+        id: string | number;
+        name: string;
+
+        constructor(id: string | number, name: string ) {
+            this.id = id;
+            this.name = name;
+        }
+        sayHello(): string {
+            throw new Error("Method not implemented.");
+        }
+    }
