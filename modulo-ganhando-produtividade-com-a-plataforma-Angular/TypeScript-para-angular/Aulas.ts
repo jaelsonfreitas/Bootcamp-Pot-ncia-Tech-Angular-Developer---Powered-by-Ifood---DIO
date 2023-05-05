@@ -95,3 +95,28 @@ const bot1: robot2 = {
             throw new Error("Method not implemented.");
         }
     }
+
+    /**
+     * Classes nada mais é do que uma forma que voçê pode aproveitar formatos.
+     */
+    // se quiser posso passar o name como opcional .
+
+        class Character {
+            name: string;
+            stregth: number;
+            skill: number;
+
+            constructor(name: string, stregth: number, skill:number){
+                this.name = name;
+                this.stregth = stregth;
+                this.skill = skill;
+            }
+
+            attack() : void{
+                console.log(`Attack with ${this.stregth} points`);
+            }
+        }
+
+        const p1 = new Character(10,98);
+        console.log(p1.attack());
+        
