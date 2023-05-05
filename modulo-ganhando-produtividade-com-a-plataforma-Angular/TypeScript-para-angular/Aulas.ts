@@ -17,3 +17,11 @@ let boleto :[string, number, number] = ["Conta de água", 199,9, 3234565];
  * arrays métodos
  * são os mesmos do JavaScript comum.
  */
+dados.pop();
+
+/**
+ * Datas
+ */
+let aniversario: Date = new Date("2023-05-04 21:41");
+console.log(aniversario.toString());
+
