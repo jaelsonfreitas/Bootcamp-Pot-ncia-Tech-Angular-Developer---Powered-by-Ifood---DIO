@@ -120,3 +120,11 @@ const bot1: robot2 = {
         const p1 = new Character(10,98);
         console.log(p1.attack());
         
+
+        /**
+        Modificadores de acesso.
+        public - modificador de acesso e publico
+        private - so pode ser acessada de dentro da classe.
+        protected - so pode ser enchergado dentro da classe ou da subclasses.
+        
+        */
