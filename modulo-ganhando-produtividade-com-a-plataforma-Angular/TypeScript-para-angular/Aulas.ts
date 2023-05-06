@@ -128,3 +128,17 @@ const bot1: robot2 = {
         protected - so pode ser enchergado dentro da classe ou da subclasses.
         
         */
+
+        // Subclasses
+
+        class Magician extends Character{
+            magicPoints: number
+            constructor(
+                name: string, 
+                stregth: number, 
+                skill: number
+                ){
+                super(name, stregth, skill);
+                this.magicPoints = magicPoints;
+            }
+        }
