@@ -154,5 +154,7 @@ const bot1: robot2 = {
         numArray.push("Hello");
         console.log(numArray);
         console.log(stgArray);
+
+        
         
         
