@@ -8,6 +8,24 @@ function apiVersion(version: string) {
 
 
 //atribute decorator
+function minLength(length: number){
+    return (target:any, key: string) =>{
+        let _value = target[key];
+
+        const getter = () => _value;
+        const setter = (value: string) => {
+            if (value.length < length) {
+                throw new Error(`Tamanho menor do que ${length}`)
+            }else {
+                _value = value;
+            }
+        };
+        Object.defineProperty(target, key, {
+            get: getter,
+            set: setter,
+        });
+    };
+}
 class Api {
     @minLength(3)
     nome: string
@@ -16,5 +34,4 @@ class Api {
     this.nome = nome;
 }        
 
-const api = new Api("produtos");
 console.log(api.nome);
