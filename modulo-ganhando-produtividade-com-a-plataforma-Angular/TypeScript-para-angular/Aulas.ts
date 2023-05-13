@@ -33,5 +33,5 @@ class Api {
     constructor(name:string)
     this.nome = nome;
 }        
-
+const api = new Api("asasasasasasa");
 console.log(api.nome);
